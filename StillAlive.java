@@ -142,9 +142,59 @@ public class StillAlive {
 
             if(cancion[i].equals("Aperture Science:")){
 
-                limpiarPantalla();
-
                 imprimirAscii("aperture.txt");
+
+            } else if(cancion[i].equals("And the science gets done.")){
+
+                imprimirAscii("atomo.txt");
+
+            } else if(cancion[i].equals("Even though you broke my heart")){
+
+                imprimirAscii("corazon.txt");
+
+            } else if(cancion[i].equals("And tore me to pieces")){
+
+                imprimirAscii("explosion.txt");
+
+            } else if(cancion[i].equals("And threw every piece into a fire")){
+
+                imprimirAscii("fuego.txt");
+
+            } else if(cancion[i].equals("I was so happy for you")){
+
+                imprimirAscii("tick.txt");
+
+            } else if(cancion[i].equals("So I'm GLaD I got burned, think of all the things we learned.")){
+
+                imprimirAscii("atomo.txt");
+
+            } else if(cancion[i].equals("For the people who are still alive")){
+
+                imprimirAscii("atomo.txt");
+
+            }  else if(cancion[i].equals("Maybe Black Mesa?")){
+
+                imprimirAscii("blackMesa.txt");
+
+            } else if(cancion[i].equals("Anyway, this cake is great")){
+
+                imprimirAscii("tarta.txt");
+
+            } else if(cancion[i].equals("Look at me, still talking when there's science to do")){
+
+                imprimirAscii("GLaDOS.txt");
+
+            } else if(cancion[i].equals("When I look out there, it makes me GLaD I'm not you")){
+
+                imprimirAscii("radiacion.txt");
+
+            } else if(cancion[i].equals("I've experiments to run, there is research to be done")){
+
+                imprimirAscii("atomo.txt");
+
+            } else if(cancion[i].equals("I've experiments to run, there is research to be done")){
+
+                imprimirAscii("explosion.txt");
 
             }
 
@@ -172,11 +222,22 @@ public class StillAlive {
 
             System.out.println("");
 
-            if(cancion[i].equals("Still alive.") || cancion[i].equals("For the people who are still alive") || cancion[i].equals("On the people who are still alive")){
+            if(cancion[i].equals("Still alive.") || cancion[i].equals("For the people who are still alive") || cancion[i].equals("On the people who are still alive") || (cancion[i].equals("Still alive") && i == cancion.length - 2)){
 
-                // Limpia la terminal al final de cada estrofa
+                // Limpia la terminal al final de cada estrofa y muestra el logo de Aperture
 
                 limpiarPantalla();
+
+                if(i != cancion.length - 2){
+
+                    imprimirAscii("aperture.txt");
+
+                }
+
+
+            } else if(cancion[i].equals("Still alive") && i == cancion.length - 1){
+
+                imprimirAscii("aperture.txt");
 
             }
 
