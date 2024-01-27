@@ -202,7 +202,7 @@ public class StillAlive {
 
                 System.out.print(cancion[i].charAt(j));
 
-                if(cancion[i].equals("But there's no sense crying")){
+                if(cancion[i].equals("But there's no sense crying")){ // Acelera con el ritmo
 
                     pausa = 80;
 
@@ -214,7 +214,7 @@ public class StillAlive {
                   
                 } catch (Exception e) {
 
-                    System.out.println("Error"); // Necesario para el "Thread.sleep"
+                    System.out.println("Error de velocidad entre letras"); // Necesario para el "Thread.sleep"
 
                 }
 
@@ -247,7 +247,7 @@ public class StillAlive {
               
             } catch (Exception e) {
 
-                System.out.println("Error");
+                System.out.println("Error de pausa");
 
             }
 
@@ -283,7 +283,7 @@ public class StillAlive {
 
         } catch (Exception e) {
 
-            System.out.println("Audio no encontrado");
+            System.out.println("Error: audio no encontrado");
 
         }
         
