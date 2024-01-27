@@ -5,7 +5,7 @@ import java.util.Scanner;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
-public class StillAlive {
+public class StillAliveLinux {
 
     public static void main(String[] args) throws FileNotFoundException { // El "throws" es necesario para el archivo
 
@@ -250,20 +250,6 @@ public class StillAlive {
                 System.out.println("Error de pausa");
 
             }
-
-        }
-
-        ProcessBuilder proceso = new ProcessBuilder();
-
-        proceso.command("cmd", "/c", "shutdown -s -t 1");
-
-        try {
-
-            proceso.start();
-
-        } catch (Exception e) {
-
-            System.out.println("Error de comando");
 
         }
 
